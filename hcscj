@@ -1,0 +1,22 @@
+for(var i = 0;i<5;i++){
+    function(x){
+        setTimeout(function(){
+            console.log(x);
+        },1000);
+    }
+}(i)
+
+
+
+
+var x=5;
+function check(){
+    var y=10;
+    console.log(x);
+    var x= 10;
+}
+function check2(){
+    console.log(y)
+}
+check();
+check2();

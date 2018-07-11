@@ -33,15 +33,33 @@ console.log(
 
 // Question---3
 
+var newObj = {}
 
+// Creating object with 'occupation' father node
+for (var z of myObj) {
+   newObj[z['occupation']] = [];
+}
 
-const arrayToObject = (array) =>
-array.reduce((obj, item) => {
-    obj[item.occupation] = item
-    return obj
-  }, {})
-const yrObj = arrayToObject(myObj);
-console.log(yrObj);
+// Pushing each child to it's corresponding father node
+for (var z of myObj) {
+   newObj[z['occupation']].push(z);
+}
+
+// Deleting the redundant 'occupation' child-node from the new object
+for (var k in newObj) {
+   for (var l of newObj[k]) {
+       delete l['occupation']
+   }
+}
+console.log(newObj)
+
+// const arrayToObject = (array) =>
+// array.reduce((obj, item) => {
+//     obj[item.occupation] = item
+//     return obj
+//   }, {})
+// const yrObj = arrayToObject(myObj);
+// console.log(yrObj);
 
 
 

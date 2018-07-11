@@ -9,7 +9,9 @@ var library = [
     return arr.sort(function(a, b) {
   
     return a.title > b.title;
+  
   });
+
 }
 
 console.log(sortByTitle(library));

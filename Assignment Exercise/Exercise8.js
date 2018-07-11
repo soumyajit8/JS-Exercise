@@ -13,10 +13,10 @@
      }
     }
 
-// /    if(frameElement.email.value == ""){
+//    if(frameElement.email.value == ""){
 
 //          alert("please Enter the email : ");
-//         frm.email.focus();
+//          frm.email.focus();
 //          return false;
 //     }
 
